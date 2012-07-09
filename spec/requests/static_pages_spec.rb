@@ -20,7 +20,4 @@ describe "Static pages" do
       page.should_not have_selector('title', :text => '| Home')
     end
   end
-  .
-  .
-  .
 end
