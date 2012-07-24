@@ -7,8 +7,8 @@ def show
   end
 
   def create
-@user = User.new(name: "Foo Bar", email: "foo@invalid",
-                 password: "foo", password_confirmation: "bar")    if @user.save
+    @user = User.new(params[:user])
+    if @user.save
       # Handle a successful save.
     else
       render 'new'
